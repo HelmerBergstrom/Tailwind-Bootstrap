@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="h1 text-primary text-decoration-none" href="#">Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
+        aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarBasic">
+        <ul class="navbar-nav mb-2 mb-xl-0">
+          <li class="nav-item ms-xl-3">
+            <a class="nav-link" href="/src/home.html">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/tailwind.html" tabindex="-1" aria-disabled="true">Tailwind</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-xl">
+    <div class="text-bg-dark flex-column rounded-5">
+      <h1 class="h1 text-center text-light mt-4">BOOTSTRAP</h1>
+      <p class="lead text-center text-light">Denna sida använder <a class="link-primary"
+          href="https://getbootstrap.com"> Bootstrap! </a></p>
+    </div>
+    <div class="text-center mt-5 mb-3">
+      <h2 class="h2 text-light mb-0"> FÖRDELAR & NACKDELAR</h2>
+      <blockquote class="blockquote text-uppercase fw-bold">Med bootstrap</blockquote>
+    </div>
+    <div class="row justify-content-center">
+      <div class="text-bg-dark col-lg-5 p-3 rounded-3">
+        <h3 class="h3 text-light text-center mb-3"> FÖRDELAR</h2>
+          <ul>
+            <li>Enkelt att komma igång. Fungerar via CDN.</li>
+            <li>Stort antal färdiga komponenter som exempelvis menyer, knappar osv.</li>
+            <li>Bra och lättförståelig dokumentation. </li>
+            <li>Responsivt grid-system, som gör det enklare att bygga design med responsivitet.</li>
+            <li>Kompatibelt med de flesta ramverk och verktyg som används idag.</li>
+          </ul>
+      </div>
+      <div class="col-lg-1 bg-success rounded-3 p-4">
+        <span></span>
+      </div>
+      <div class="col-lg-1 bg-danger rounded-3 p-4">
+        <span></span>
+      </div>
+      <div class="text-bg-dark col-lg-5 p-3 rounded-3 text-lg-start">
+        <h3 class="h3 text-light text-center mb-3"> NACKDELAR </h2>
+          <ul>
+            <li>Bootstrap-sidor kan se lika ut om man inte själv anpassar designen.</li>
+            <li>Kräver mycket kod i klasser, HTML-kod kan se rörigt ut.</li>
+            <li>Egen styling är komplicerat.</li>
+            <li>Storleken på ramverket gör att det kan kännas som överkurs för mindre projekt.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="bg-dark rounded-3 text-center">
+      <h3 class="h3 text-light text-center mt-5 p-2">MINA UPPLEVELSER</h3>
+      <div class="mx-auto w-75 text-center text-light mb-4">
+        <p>
+          Bootstraps färdigastilade komponenter tyckte jag gjorde arbetet lite tråkigt. Jag har inte dykt
+          ned i hur man gör egna stilar, men jag vet nu att det krävs om man vill arbeta med Bootstrap på "riktigt",
+          alltså i projekt eller liknande.
+          De färdigstilade komponenterna är trevliga och lätta att implementera, men man tappar lite av den
+          kreativa delen i det hela.
+        </p>
+        <p>
+          Jag tycker det är minst lika jobbigt att navigera i denna HTML-fil som med Tailwind. För att bäst hitta
+          använder
+          jag <code class="text-light">"command + F"</code> och söker på ordet där jag vill stila om.
+        </p>
+        <p>
+          Bootstrap är något svårare att komma igång med. Ett tydligt exempel på varför är att
+          <code class="text-light"> "margin-left: x"</code> i Bootstrap är <code class="text-light">"ms: x"</code>.
+          Dessa
+          förkortningar hänger jag inte
+          med på riktigt, men det kommer såklart sätta sig när man jobbat mer med detta.
+        </p>
+        <p>
+          Det positiva är att det är att det går snabbt att skapa en tillfredsställande design, som är responsiv och
+          ser bra ut. Detta när man väl förstått vad olika förkortningar står för. Jag använde i detta arbete en
+          <a href="https://bootstrap-cheatsheet.themeselection.com">CheatSheet</a>
+          som med Tailwind, som underlättade arbetet rejält.
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div class="bg-gradient mx-auto w-100 rounded-3 text-dark text-center p-4 mb-4">
+      <h3 class="text-light">TABELL</h3>
+      <div class="table-responsive">
+        <table class="table table-dark table-bordered mb-0 table-hover">
+          <thead class="bg-gradient">
+            <tr>
+              <th class="font-monospace">ID</th>
+              <th class="font-monospace">Namn</th>
+              <th class="font-monospace">Lag</th>
+              <th class="font-monospace">Status</th>
+              <th class="font-monospace">Målvakt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lukas Bergvall</td>
+              <td>Tottenham</td>
+              <td>Aktiv</td>
+              <td>NEJ</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Allison Becker</td>
+              <td>Liverpool</td>
+              <td>Aktiv</td>
+              <td>JA</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Donnarumma</td>
+              <td>Manchester City</td>
+              <td>Aktiv</td>
+              <td>JA</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Jordan Pickford</td>
+              <td>Everton</td>
+              <td>Aktiv</td>
+              <td>JA</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Erling Haaland</td>
+              <td>Manchester City</td>
+              <td>Aktiv</td>
+              <td>NEJ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bg-gradient p-4 mx-auto w-100 rounded-3 text-light mb-4">
+      <h3 class="h3 text-center mb-4"> FORMULÄR </h3>
+      <div class="mx-auto w-75">
+        <form>
+
+          <div>
+            <input required type="text" class="form-control" placeholder="Spelarens namn..">
+          </div>
+
+          <div class="form-floating mt-4">
+            <textarea required class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea">Spelarens lag</label>
+          </div>
+
+          <select required class="form-select form-select mt-4">
+            <option value="" disabled selected> Välj..</option>
+            <option value="aktiv">Aktiv</option>
+            <option value="ejAktiv">Ej aktiv</option>
+          </select>
+
+          <div class="form-check mt-4">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">Målvakt</label>
+          </div>
+
+
+          <button type="submit" class="btn btn-success w-100 mt-4 mb-3">Skicka spelare</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

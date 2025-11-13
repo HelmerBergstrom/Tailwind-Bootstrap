@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind</title>
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-amber-100 container-xl">
+  <!-- KOLLA XL i detta för responsiv design senare!-->
+  <header class="bg-blue-500">
+    <nav class="p-10">
+      <ul class="flex flex-row justify-center">
+        <li>
+          <a href="/src/home.html"
+            class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+            HEM
+          </a>
+        </li>
+        <li>
+          <a href="/src/tailwind.html" class="bg-blue-600 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-default">
+            TAILWIND
+          </a>
+        </li>
+        <li>
+          <a href="/src/bootstrap.html"
+            class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+            BOOTSTRAP
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div
+    class="bg-[url('/images/smallTailwind.jpeg')] bg-cover bg-center h-96 flex items-center justify-center lg:bg-[url('/images/largeTailwind.png')]">
+  </div>
+
+  <div class="flex flex-col text-center">
+    <p class="bg-amber-50 p-2">
+      <a href="https://tailwindcss.com" class="text-blue-500 underline font-sans hover:text-blue-700">
+        🌐 Besök Tailwind CSS officiella webbplats
+      </a>
+    </p>
+
+    <h1 class="text-blue-700 font-mono text-2xl font-bold mt-7 mb-5 md:text-4xl">
+      Information om Tailwind CSS
+    </h1>
+
+    <div class="m-10 max-w-full text-left bg-white rounded-2xl shadow-md p-6 md:max-w-2xl md:m-auto">
+      <p class="text-gray-700 mb-4">
+        <strong>Tailwind CSS</strong> är ett så kallat
+        <em>utility-first CSS-ramverk</em>
+        som gör det möjligt att snabbt bygga moderna och responsiva gränssnitt
+        direkt i HTML. Istället för att skriva egna CSS-regler, använder man
+        färdiga klasser för layout, färger, marginaler, typsnitt och mycket
+        mer.
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Det här tillvägagångssättet gör det lättare att skapa enhetliga
+        designer, samtidigt som man slipper växla mellan HTML och CSS-filer.
+        Tailwind fungerar även utmärkt tillsammans med ramverk som
+        <strong>React</strong>, <strong>Vue</strong> och
+        <strong>Next.js</strong>.
+      </p>
+
+      <p class="text-gray-700">
+        För att komma igång med Tailwind kan du använda CLI, installera via
+        npm eller integrera det med byggverktyg som Vite och PostCSS.
+        Dokumentationen är tydlig och full av exempel.
+      </p>
+    </div>
+  </div>
+
+  <div class="m-10 max-w-full text-left bg-white rounded-2xl shadow-md p-6 md:max-w-2xl md:m-auto md:mt-10">
+    <h2 class="text-2xl font-mono font-bold text-blue-700 text-center">
+      Utvärdering av Tailwind CSS
+    </h2>
+    <p class="mt-7">
+      <strong> Fördelarna med Tailwind CSS </strong> är att det går snabbt att
+      skapa responsiv design och snygg design utan att behöva skapa egna
+      CSS-regler. Man får en konsekvent design med hjälp av de klasser som
+      Tailwind erbjuder.
+      <a href="https://tailwindcss.com/docs/installation/using-vite"
+        class="text-blue-500 underline font-sans hover:text-blue-700">
+        Dokumentationen</a>
+      för Tailwind CSS är strålande och det finns goda verktyg(<em>cheat sheets</em>) för att underlätta utvecklingen av
+      designen. Ramverket fungerar
+      dessutom med moderna verktyg som <strong>React</strong>,
+      <strong>Vue</strong> och
+      <strong>Vite</strong>
+    </p>
+    <p class="mt-7">
+      <strong>Nackdelarna med Tailwind CSS </strong> är att HTML-kod kan se
+      väldigt rörig ut med alla klasser som läggs till. Det kan ta tid att
+      lära sig hur dessa klasser fungerar och ser ut, och hur det hänger ihop.
+      Några mer nackdelar kommer jag inte på i skrivande stund.
+    </p>
+    <p class="mt-7">
+      <strong>Min upplevelse hittills med Tailwind CSS </strong> är en positiv
+      sådan. Jag gillar hur effektivt arbetet blir när man jobbar med
+      förkortningar och kan inkludera flera designsteg i samma korta text. Jag
+      gillar också att förkortningarna går att förstå sig på, genom tillägget
+      jag laddat hem <em>Tailwind CSS IntelliSense</em> och genom att träna
+      såklart. Jag gillar även hur Tailwind jobbar med x- och y-axlar för att
+      förklara horisontellt och vertikalt, med exempelvis px-4 eller py-2.
+      <br />
+      <br />
+      Jag tycker det har gått snabbt att lära sig att använda Tailwind. Dels
+      för att det finns mycket material på internet som underlättar, men också
+      för att själva koden går att förstå. Jag ser inte så stora problem just
+      nu med ramverket, det enda som känns lite jobbigt är hur mycket kod det
+      blir i dessa klasser, som läggs bland HTML-kod. Det är jobbigt att hitta
+      i filen som jag skriver i nu pågrund av den hyfsat stora mängden klasser
+      och kod i dessa.
+      <br />
+      Överlag ser jag positivt på Tailwind CSS och gillar verkligen hur det
+      fungerar och hjälper till med att effektivisera arbetet med CSS och
+      design. Responsiva delen tar lite tid att vänja sig med, men det kommer
+      så småningom klicka det också.
+    </p>
+  </div>
+
+  <div class="m-auto max-w-2xl rounded-2xl p-6 mt-10">
+    <h2 class="text-2xl font-bold text-blue-700 text-center mb-5">
+      TABELL MED FOTBOLLSSPELARE
+    </h2>
+    <table class="m-auto table-auto container bg-white border-collapse border shadow-md border-gray-300">
+      <thead class="bg-blue-300">
+        <tr>
+          <th class="border border-gray-300 px-4 py-2 text-left">ID</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Namn</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Lag</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Forward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-blue-50">
+          <td class="border border-gray-300 p-2">1</td>
+          <td class="border border-gray-300 p-2">Lukas Bergvall</td>
+          <td class="border border-gray-300 p-2">Tottenhem</td>
+          <td class="border border-gray-300 p-2">Aktiv</td>
+          <td class="border border-gray-300 p-2 text-center">NEJ</td>
+        </tr>
+        <tr class="hover:bg-blue-50">
+          <td class="border border-gray-300 p-2">2</td>
+          <td class="border border-gray-300 p-2">Victor Lindelöf</td>
+          <td class="border border-gray-300 p-2">Aston Villa</td>
+          <td class="border border-gray-300 p-2">Aktiv</td>
+          <td class="border border-gray-300 p-2 text-center">NEJ</td>
+        </tr>
+        <tr class="hover:bg-blue-50">
+          <td class="border border-gray-300 p-2">3</td>
+          <td class="border border-gray-300 p-2">Zlatan Ibrahimovic</td>
+          <td class="border border-gray-300 p-2">-</td>
+          <td class="border border-gray-300 p-2">Ej aktiv</td>
+          <td class="border border-gray-300 p-2 text-center">JA</td>
+        </tr>
+        <tr class="hover:bg-blue-50">
+          <td class="border border-gray-300 p-2">4</td>
+          <td class="border border-gray-300 p-2">Alexander Isak</td>
+          <td class="border border-gray-300 p-2">Liverpool</td>
+          <td class="border border-gray-300 p-2">Aktiv</td>
+          <td class="border border-gray-300 p-2 text-center">JA</td>
+        </tr>
+        <tr class="hover:bg-blue-50">
+          <td class="border border-gray-300 p-2">5</td>
+          <td class="border border-gray-300 p-2">Viktor Gyökeres</td>
+          <td class="border border-gray-300 p-2">Arsenal</td>
+          <td class="border border-gray-300 p-2">Aktiv</td>
+          <td class="border border-gray-300 p-2 text-center">JA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="m-auto max-w-2xl container mt-10 mb-10">
+    <h2 class="text-2xl font-bold text-blue-700 text-center">
+      Lägg till ny spelare
+    </h2>
+
+    <form class="space-y-5 mr-10 ml-10 mt-5 bg-white p-10 rounded-2xl">
+      <div>
+        <label for="project" class="block font-semibold text-gray-700">Spelarens namn:*</label>
+        <input required id="project" type="text" placeholder="Skriv in spelarens namn"
+          class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-400" />
+      </div>
+
+      <div>
+        <label for="description" class="block font-semibold text-gray-700">Lag(ej obligatorisk):</label>
+        <textarea id="description" rows="3" placeholder="Spelarens lag"
+          class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-400"></textarea>
+      </div>
+
+      <div>
+        <label for="status" class="block font-semibold text-gray-700">Status:*</label>
+        <select required id="status"
+          class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-400">
+          <option value="" disabled selected>Välj status..</option>
+          <option value="Aktiv">Aktiv</option>
+          <option value="Ej aktiv">Ej aktiv</option>
+        </select>
+      </div>
+
+      <div class="flex items-center">
+        <input type="checkbox" class="text-blue-600 border-gray-300 rounded m-1 h-6 w-6" />
+        <label class="ml-2 text-gray-700 font-semibold"> Forward(bocka i rutan)</label>
+      </div>
+
+      <button type="submit"
+        class="bg-blue-600 text-white px-4 py-4 w-full rounded-md hover:bg-blue-700 hover:cursor-crosshair transition">
+        Skicka in
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>
