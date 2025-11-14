@@ -274,11 +274,11 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
@@ -286,11 +286,11 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-75 {
     width: calc(var(--spacing) * 75);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-full {
     width: 100%;
@@ -386,8 +386,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\/images\/smallTailwind\.jpeg\'\)\] {
-    background-image: url('/images/smallTailwind.jpeg');
+  .bg-\[url\(\'images\/smallTailwind\.jpeg\'\)\] {
+    background-image: url('images/smallTailwind.jpeg');
   }
   .bg-cover {
     background-size: cover;
@@ -568,9 +568,9 @@
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
-  .lg\:bg-\[url\(\'\/images\/largeTailwind\.png\'\)\] {
+  .lg\:bg-\[url\(\'images\/largeTailwind\.png\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('/images/largeTailwind.png');
+      background-image: url('images/largeTailwind.png');
     }
   }
 }
