@@ -12,28 +12,99 @@
     <!-- KOLLA XL i detta för responsiv design senare! Kör med Prettier extension, därav formatet. -->
     <header class="bg-blue-500">
         <nav class="p-10">
-            <ul class="flex flex-row justify-center">
-                <li>
-                    <a href="index.html" class="bg-blue-600 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-default">
+            <ul class="flex flex-col text-center md:flex-row md:justify-center">
+                <li class="mb-6 md:mb-0">
+                    <a href="index.html"
+                        class="bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
                         HEM
                     </a>
                 </li>
-                <li>
+                <li class="mb-6 md:mb-0">
                     <a href="tailwind.html"
-                        class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+                        class="transition duration-800 bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
                         TAILWIND
                     </a>
                 </li>
-                <li>
+                <li class="mb-6 md:mb-0">
                     <a href="bootstrap.html"
-                        class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+                        class="transition duration-800 bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
                         BOOTSTRAP
+                    </a>
+                </li>
+                <li>
+                    <a href="publicera.html"
+                        class="bg-blue-600 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-default">
+                        PUBLICERING
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <section>
+        <h1 class="text-3xl text-center m-3 font-bold font-mono"> PUBLICERING </h1>
+        <div class="bg-blue-300 p-4 rounded-2xl flex flex-col m-auto max-w-2xl text-black">
+            <p> Jag valde att publicera denna hemsida till <a class="underline text-blue-700" href="https://render.com">
+                    Render</a>. Render har flera alternativ på sidor/program man kan
+                publicera.
+                <br>
+                De alternativ som de erbjuder är:
+            </p>
+            <ul class="list-disc mb-3 ml-10">
+                <li class="list-item "> Static Site </li>
+                <li class="list-item "> Web Service </li>
+                <li class="list-item "> Private Service </li>
+                <li class="list-item "> Background Worker </li>
+                <li class="list-item "> Cron Job </li>
+                <li class="list-item "> Postgres </li>
+                <li class="list-item "> Key Value </li>
+            </ul>
+            <p class="mb-3">
+                För denna webbplats valde jag alternativet "Static Site", som passar perfekt till en sån här
+                lite enklare sida. Render hämtar information från mitt GitHub-repo som denna webbplats ligger i och
+                kör med hjälp av repo:t publiceringen.
+            </p>
+            <p>
+                Render går att köra gratis, som jag gör nu. Vill man publicera ett större projekt som kräver mer av
+                plattformen har man möjlighet att betala för andra funktioner som t.ex. samarbete mellan teammedlemmar
+                eller utökad bandbredd.
+            </p>
+            <h2 class="text-center text-2xl font-bold font-mono mt-3 mb-1"> Render - Kodstöd </h2>
+            <p> Render har stöd för följande kodspråk: </p>
+            <ul class="list-disc mb-3 ml-10">
+                <li class="list-item"> Node.js </li>
+                <li class="list-item"> Bun </li>
+                <li class="list-item"> Python </li>
+                <li class="list-item"> Ruby </li>
+                <li class="list-item"> Go </li>
+                <li class="list-item"> Rust </li>
+                <li class="list-item"> Elixir. </li>
+            </ul>
+            <h2 class="text-2xl text-center font-mono font-bold mb-2"> Publicering </h2>
+            <p>
+                När man publicerar via GitHub, kopplar man Render till repositoryt där koden för webbplatsen
+                eller programmet ligger. Man väljer vilken branch som man vill publicera. När man publicerat
+                från denna branch, känner Render av när en ny "push" har gjorts till GitHub och uppdaterar därefter
+                den publicerade webbplatsen.
+            </p>
+            <h3 class="text-2xl font-mono text-center mt-3 mb-2"> Mina tankar </h3>
+            <p class="mb-3">
+                Jag försökte först att publicera med GitHub Pages. Detta var väldigt krångligt i mitt tycke.
+                Jag tyckte instruktionerna var luddiga och det fanns t.ex. ingen knapp för att publicera, inte vad jag
+                fann iallafall.
+                Dessutom fanns det bara två alternativ för vilken mapp som skulle publiceras, antingen /root eller
+                /docs.
+                Min mapp med alla arbetsfiler hette vid detta laget "/src", så även detta var skumt.
+            </p>
+            <p class="mb-5">
+                Jag valde därför bort GitHub Pages och gick istället till Render. Jag har tidigare använt Render, men
+                det va länge sedan.
+                Render har ett tydligare gränssnitt för hur man publicerar och generellt sett tydligare steg-för-steg
+                guide
+                för hur man publicerar.
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>

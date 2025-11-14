@@ -12,22 +12,28 @@
   <!-- KOLLA XL i detta för responsiv design senare! Kör med Prettier extension, därav formatet. -->
   <header class="bg-blue-500">
     <nav class="p-10">
-      <ul class="flex flex-row justify-center">
-        <li>
-          <a href="index.html" class="bg-blue-600 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-default">
+      <ul class="flex flex-col text-center md:flex-row md:justify-center">
+        <li class="mb-6 md:mb-0">
+          <a href="index.html" class="bg-blue-600 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-default">
             HEM
           </a>
         </li>
-        <li>
+        <li class="mb-6 md:mb-0">
           <a href="tailwind.html"
-            class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+            class="transition duration-800 bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
             TAILWIND
           </a>
         </li>
-        <li>
+        <li class="mb-6 md:mb-0">
           <a href="bootstrap.html"
-            class="transition duration-800 bg-blue-800 text-amber-50 p-5 border-2 rounded-2xl m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+            class="transition duration-800 bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
             BOOTSTRAP
+          </a>
+        </li>
+        <li>
+          <a href="publicera.html"
+            class="transition duration-800 bg-blue-800 text-amber-50 p-2 md:p-5 border-2 rounded-2xl md:m-5 cursor-crosshair hover:bg-blue-600 hover:border-3">
+            PUBLICERING
           </a>
         </li>
       </ul>
@@ -35,23 +41,41 @@
   </header>
   <div class="bg-blue-300 p-10">
     <h1 class="text-3xl text-blue-900 font-mono text-center font-bold">
-      START
+      LABB 1
     </h1>
   </div>
   <span class="border-2 flex flex-row"> </span>
-  <section class="container-xl bg-blue-100">
+  <section class="container-x bg-blue-100">
     <div class="flex flex-col">
-      <h2 class="text-2xl text-center text-shadow-black mt-10">
-        Information om uppgiften, och vad den går ut på - tillsammans med
-        information om vilka CSS-ramverk du använt för att lösa uppgiften.
+      <h2 class="text-2xl text-center mt-10">
+        TAILWIND CSS & BOOTSTRAP
       </h2>
-      <div class="bg-blue-950 text-white border-4 border-blue-600 rounded-2xl mt-10 text-center">
+      <div
+        class="bg-blue-950 text-white border-4 border-blue-600 rounded-2xl mt-10 text-center flex flex-col m-auto max-w-2xl p-3">
         <p class="m-3">
-          Jag har valt att arbeta med Tailwind och Bootstrap som CSS-ramverk i
-          denna uppgift. Detta då ramverken verkar vara de populäraste just
-          nu.
+          Uppgiften går ut på att välja minst 2 olika ramverk för CSS och använda dessa för att skapa
+          en sammanhängande webbplatsen.
         </p>
-        <p>TEST</p>
+        <p>
+          CSS-ramverken ska användas på respektive sidor. I denna webbplats används ramverken Tailwind och Bootstrap
+          på undersidorna med samma namn.
+          Jag valde att använda dessa ramverk för jag har sett och hört mest om dessa och för de används i många
+          webbplatser.
+        </p>
+      </div>
+      <div class="bg-blue-600 text-white border-4 border-blue-950 rounded-2xl mt-10 flex flex-col m-auto p-3">
+        <p class="mt-3">
+          Förutom att bara använda ramverken, ska webbplatsen uppfylla krav.
+          <br>
+          Detta ska återfinnas på webbplatsen:
+        <ul class="list-disc">
+          <li class="list-item p-1 list-inside"> Responsiv design </li>
+          <li class="list-item p-1 list-inside"> För- och nackdelar om respektive ramverk </li>
+          <li class="list-item p-1 list-inside"> Utvärdering av min upplevelse med ramverken </li>
+          <li class="list-item p-1 list-inside"> En tabell i vardera undersida </li>
+          <li class="list-item p-1 list-inside"> Ett formulär i vardera undersida </li>
+        </ul>
+        </p>
       </div>
     </div>
   </section>
